@@ -1,0 +1,189 @@
+/* 
+
+=============
+ table of contents
+===============
+
+1- header 
+
+2-
+
+
+/* --------------------------------------->>>>>>>>>> */
+
+
+/* ===============
+0. global style
+================ */
+
+
+/* ===========
+1- header
+=========== */
+
+
+.logo img {
+    animation: main-lego 2671ms 1;
+}
+
+@keyframes main-lego {
+    0% {
+        transform: translatey(-175%);
+
+    }
+
+    58% {
+        transform: translatey(44%);
+    }
+
+
+    100% {
+        transform: translatey(0);
+
+    }
+}
+
+@media (max-width:740px) {
+
+
+    nav ul li {
+        animation: head-mob-main 808ms 1;
+        animation-delay: 10ms;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes head-mob-main {
+        0% {
+            transform: translateX(-45%);
+        }
+
+        50% {
+            transform: translateX(10%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+}
+
+/* END header  */
+
+
+/* 2- landing text  */
+
+/* under test */
+.landing .text span {
+    display: block;
+    transition: 0.33s;
+}
+
+
+.show-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 800px;
+    transition: 1s;
+    opacity: 0;
+    /* under test */
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.show-2 p {
+    font-size: 18px !important;
+    color: rgb(90, 158, 160);
+}
+
+@keyframes control-width {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 800px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: rgb(131, 202, 204);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* ---- */
+/* arrow contral to right */
+#show-2-display {
+    display: none;
+}
+
+.fa-circle-chevron-right {
+    font-size: 22px;
+    position: absolute;
+    top: 36px;
+    right: 55px;
+    cursor: pointer;
+    transition: .16s;
+    border-radius: 50%;
+}
+
+.fa-circle-chevron-right:hover {
+    font-size: 22.2px;
+    background-color: #fff;
+    color: cyan;
+}
+
+/* ---- */
+
+#show-2-display:checked~.show-2 {
+    animation: control-width 3.2s steps(35) 434ms both, blink 0.5s 1;
+    opacity: 1;
+}
+
+#show-2-display:checked+.show-1 {
+    transform: translateX(110%);
+}
+
+/* END text Landing */
+
+/* start our-skills */
+
+
+.our-skills figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.our-skills figure:hover::before {
+    -webkit-animation: anmie .75s;
+    animation: anmie .75s;
+}
+
+@-webkit-keyframes anmie {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes anmie {
+    100% {
+        left: 90%;
+    }
+}

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>project</title>
+    <link rel="shortcut icon" href="images/t-title.png" type="image/png" />
+    <!-- style sheet -->
+
+    <!-- Render all Elements Normally -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- for desktop style sheet -->
+    <link rel="stylesheet" href="styles/main-style.css" />
+
+    <!-- for mobile style sheet -->
+    <link
+      rel="stylesheet"
+      href="styles/phone-style.css"
+      media="(max-width : 767px)"
+    />
+    <!-- for animetion style sheet  -->
+    <link rel="stylesheet" href="styles/anime.css" />
+
+    <!-- font google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Jomhuria&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- star header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img decoding="async" src="images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+          <label for="show-menu"><div></div></label>
+          <input
+            type="checkbox"
+            role="button"
+            aria-label="Display the menu"
+            class="menu"
+            id="show-menu"
+          />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="#folio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#">Search</a>
+              <input
+                placeholder="Search..."
+                class="js-search"
+                type="search"
+                id="sr"
+              />
+              <i class="fa fa-search show-s"></i>
+            </li>
+          </ul>
+          <input type="checkbox" id="show-sr" />
+          <input type="search" class="sr-test" />
+          <div class="right-nav">
+            <label for="show-sr">
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END header -->
+    <!-- Start Landing -->
+    <section class="landing">
+      <div class="overlay"></div>
+      <div class="text">
+        <div class="content">
+          <label for="show-2-display"
+            ><i class="fa-solid fa-circle-chevron-right"></i
+          ></label>
+          <input type="checkbox" id="show-2-display" />
+          <span class="show-1">
+            <h2>
+              Hello World!<br />
+              We Are Kasper We Make Art.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+              tempora ullam tenetur impedit ipsum deserunt officiis! Ex harum
+              cupiditate quibusdam , autem corporis quae asperiores deserunt
+              voluptatibus reiciendis cum! Accusantium!
+            </p>
+          </span>
+          <span class="show-2">
+            <p>Thats Under TEST :Lorem ipsum dolor sit amet conture elit.</p>
+          </span>
+        </div>
+      </div>
+      <i class="fas fa-angle-left change-background fa-2x"></i>
+      <i class="fas fa-angle-right change-background fa-2x"></i>
+      <ul class="bullets">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+      </ul>
+    </section>
+    <!-- End Landing -->
+    <!-- Start Services -->
+    <section class="services" id="serv">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Services</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem vitae dolore optio incidunt asperiores, dicta
+          </p>
+        </div>
+        <div class="services-container">
+          <div class="srv-box">
+            <lord-icon
+              src="https://cdn.lordicon.com/nahcnmsv.json"
+              trigger="hover"
+              style="width: 140px; height: 140px"
+              class="anmie-icons"
+            >
+            </lord-icon>
+            <div class="text">
+              <h3>Our Services</h3>
+              <p>
+                dolor sit amet consectetur adipisicing elit. Exercitationem
+                vitae doloadipisicing elit. Exercitationem vitae dolore optio
+                incidunt asperiores, dicta
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fas fa-cog fa-3x"></i>
+            <i class="fas fa-cog fa-3x fa-spin"></i>
+            <div class="text">
+              <h3>Our Services</h3>
+              <p>
+                dolor sit amet consectetur adipisicing elit. Exercitationem
+                vitae doloadipisicing elit. Exercitationem vitae dolore optio
+                incidunt asperiores, dicta
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <lord-icon
+              src="https://cdn.lordicon.com/nkbnjier.json"
+              trigger="loop"
+              delay="808"
+              colors="primary:#646e78,secondary:#3a3347,tertiary:#08a88a,quaternary:#109173"
+              style="width: 140px; height: 140px"
+              class="anmie-icons"
+            >
+            </lord-icon>
+            <div class="text">
+              <h3>Our Services</h3>
+              <p>
+                dolor sit amet consectetur adipisicing elit. Exercitationem
+                vitae doloadipisicing elit. Exercitationem vitae dolore optio
+                incidunt asperiores, dicta
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <lord-icon
+              src="https://cdn.lordicon.com/hwzudlvw.json"
+              trigger="hover"
+              style="width: 140px; height: 140px"
+              class="anmie-icons"
+            >
+            </lord-icon>
+            <div class="text">
+              <h3>Our Services</h3>
+              <p>
+                dolor sit amet consectetur adipisicing elit. Exercitationem
+                vitae doloadipisicing elit. Exercitationem vitae dolore optio
+                incidunt asperiores, dicta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start Design -->
+    <section class="design">
+      <figure>
+        <img src="images/Design.png" alt="design pic" />
+      </figure>
+      <div class="text">
+        <h2>Our Design Comes With...</h2>
+        <ul>
+          <li>Responsive Design</li>
+          <li>Modern And Clean Design</li>
+          <li>Clean Code</li>
+          <li>Browser Friendly</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Design -->
+    <!-- Start Portfolio -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="main-heading">
+          <h2 id="folio">Portfolio</h2>
+          <p>
+            Lorem ipsum dolor sit amet consecteturon neque quo nesciunt, et
+            incidunt repudiandae amet voluptatem beatae enim autem illum!
+          </p>
+        </div>
+        <ul>
+          <li>all</li>
+          <li>app</li>
+          <li>photo</li>
+          <li>web</li>
+          <li>print</li>
+        </ul>
+      </div>
+      <div class="imgs-boxes">
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-01.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-02.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-03.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-04.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-05.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-06.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-07.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-08.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <input type="checkbox" id="show-imgs-container" />
+      <label for="show-imgs-container" id="more">
+        <span class="more">More</span>
+      </label>
+      <div class="imgs-boxes hid">
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-09.png"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-10.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-11.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-12.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-13.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-14.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            decoding="async"
+            src="images/Gallery/shuffle-15.jpg"
+            alt="Image-gallery"
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="images/Gallery/shuffle-16.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <label for="show-imgs-container" id="less"
+        ><span class="more">less</span></label
+      >
+    </section>
+    <!-- END Portfolio -->
+    <!-- Start Video -->
+    <section class="video">
+      <video autoplay muted loop>
+        <source src="images/Magic.mp4" type="video/mp4" />
+        Your browser does not support video
+      </video>
+      <div class="text">
+        <h2>Super Awesome Video Here</h2>
+        <p>Its All You Need</p>
+        <button>See More</button>
+      </div>
+    </section>
+    <!-- End Video -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="main-heading">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias.
+            Alias laudantium vero impedit .
+          </p>
+        </div>
+        <img decoding="async" src="images/about.png" alt="" />
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Stats -->
+    <section class="stats">
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <div class="number">1.236</div>
+          <p>Coffee Drinks</p>
+        </div>
+        <div class="box">
+          <i class="far fa-folder"></i>
+          <div class="number">256</div>
+          <p>Completed Projects</p>
+        </div>
+        <div class="box">
+          <i class="far fa-envelope"></i>
+          <div class="number">1,743</div>
+          <p>Mail Sent</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-trophy"></i>
+          <div class="number">17</div>
+          <p>Awards Received</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Stats -->
+    <!-- Start Skills -->
+    <section class="our-skills">
+      <div class="container">
+        <div class="team">
+          <h3>Team work</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in
+            iusto, impedit
+          </p>
+          <div class="content">
+            <figure>
+              <img
+                decoding="async"
+                src="images/avatar-1.jfif"
+                alt="profile-pic"
+                title="John Doe"
+              />
+            </figure>
+            <div class="text">
+              vitae deserunt aspernatur assumenda expedita autem ipsum in porro
+              excepturi voluptatem eget elit .
+              <p>John Doe, CEO</p>
+            </div>
+          </div>
+          <div class="content">
+            <figure>
+              <img
+                decoding="async"
+                src="images/avatar-2.jpg"
+                alt="profile-pic"
+                title="Tomas Jr"
+              />
+            </figure>
+            <div class="text">
+              vitae deserunt aspernatur assumenda expedita autem ipsum in porro
+              excepturi voluptatem eget elit .
+              <p>Tomas Jr, Manger</p>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in
+            iusto, impedit
+          </p>
+          <div class="prog-holder">
+            <h4>Html &amp; Css</h4>
+            <div class="prog">
+              <span style="width: 97%" data-progress="95%"></span>
+            </div>
+          </div>
+          <div class="prog-holder">
+            <h4>Adobe</h4>
+            <div class="prog">
+              <span style="width: 71%" data-progress="80%"></span>
+            </div>
+          </div>
+          <div class="prog-holder">
+            <h4>Php</h4>
+            <div class="prog">
+              <span style="width: 78%" data-progress="85%"></span>
+            </div>
+          </div>
+          <div class="prog-holder">
+            <h4>JavaScript</h4>
+            <div class="prog">
+              <span style="width: 88%" data-progress="90%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills -->
+    <!-- Start Quote -->
+    <section class="quote">
+      <div class="container">
+        <i
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias.
+          Alias laudantium vero impedit corrupti recusandae architecto tenetur
+          sint ipsum!
+        </i>
+        <span>John Doe</span>
+      </div>
+    </section>
+    <!-- End Quote -->
+    <!-- Start Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Pricing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque
+            nisi repellat illum numquam vitae ..
+          </p>
+        </div>
+      </div>
+      <div class="plans">
+        <div class="plan plan-white">
+          <h2 class="plan-title">basic</h2>
+          <p class="plan-price">$19<span>/month</span></p>
+          <div class="plan-content">
+            <p>feature no 1</p>
+            <p>extra feature</p>
+            <p>extra feature no 2</p>
+            <p>feature</p>
+          </div>
+          <a href="#contact" class="buy">buy now</a>
+        </div>
+        <div class="plan plan-white">
+          <h2 class="plan-title">premium</h2>
+          <p class="plan-price">$29<span>/month</span></p>
+          <div class="plan-content">
+            <p>feature no 1</p>
+            <p>extra feature</p>
+            <p>extra feature no 2</p>
+            <p>feature</p>
+          </div>
+          <a href="#contact" class="buy">buy now</a>
+        </div>
+        <div class="plan plan-color">
+          <h2 class="plan-title">pro</h2>
+          <p class="plan-price">$39<span>/month</span></p>
+          <div class="plan-content">
+            <p>feature no 1</p>
+            <p>extra feature</p>
+            <p>extra feature no 2</p>
+            <p>feature</p>
+          </div>
+          <a href="#contact" class="buy">buy now</a>
+        </div>
+        <div class="plan plan-white">
+          <h2 class="plan-title">platinum</h2>
+          <p class="plan-price">$49<span>/month</span></p>
+          <div class="plan-content">
+            <p>feature no 1</p>
+            <p>extra feature</p>
+            <p>extra feature no 2</p>
+            <p>feature</p>
+          </div>
+          <a href="#contact" class="buy">buy now</a>
+        </div>
+      </div>
+      <p class="bottom-text">Contact us if you have special request</p>
+      <a href="#sub" class="buy contact-us">contact us</a>
+    </section>
+    <!-- End Pricing -->
+    <!-- Start Subscribe -->
+    <section class="subscribe" id="sub">
+      <div class="container">
+        <form action="">
+          <input
+            type="email"
+            name="mail"
+            placeholder="Write Your Email"
+            required
+            minlength="6"
+            maxlength="99"
+            id="sub"
+          />
+          <label for="sub">Write Your Email</label>
+          <input type="submit" value="Subscribe" />
+        </form>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur tque repudiandae, veniam
+          expedita sequi animi ex dolor sit.
+        </p>
+      </div>
+    </section>
+    <!-- End Subscribe -->
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur tque repudiandae, veniam
+            expedita sequi animi ex dolor sit.
+          </p>
+        </div>
+        <div class="content">
+          <form action="">
+            <div class="input-group">
+              <input
+                class="main-input"
+                type="text"
+                placeholder="Your Name"
+                required
+                id="user"
+              />
+              <label for="user" class="up-placeholder">Your Name</label>
+            </div>
+            <div class="input-group">
+              <input
+                class="main-input"
+                type="email"
+                placeholder="Your Email"
+                required
+                ia="mail"
+              />
+              <label for="mail" class="up-placeholder">Your Email</label>
+            </div>
+            <textarea
+              class="main-input"
+              name="message"
+              placeholder="Your Message"
+              required
+              minlength="14"
+              maxlength="199"
+            ></textarea>
+            <input type="submit" value="send message" />
+          </form>
+          <div class="info">
+            <h4>
+              Get In Touch
+              <lord-icon
+                src="https://cdn.lordicon.com/srsgifqc.json"
+                trigger="loop"
+                delay="1111"
+                colors="primary:#10e9c5"
+                style="width: 30px; height: 30px"
+                class="icon-contact-1"
+              >
+              </lord-icon>
+            </h4>
+            <span class="phone">+00 123.456.789</span>
+            <span class="phone">+00 123.456.789</span>
+            <h4>
+              Where We Are
+              <lord-icon
+                src="https://cdn.lordicon.com/lwhasywi.json"
+                trigger="loop"
+                delay="1111"
+                colors="primary:#121331,secondary:#10e9c5"
+                style="width: 30px; height: 30px"
+                class="icon-contact-2"
+              >
+              </lord-icon>
+            </h4>
+            <address>kasper Address 22<br />cairo, SALAM<br />EG</address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer>
+      <h2>Follow us</h2>
+      <div class="social-menu">
+        <ul>
+          <li>
+            <a href="https://github.com/" target="blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/" target="blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="" target="blank"
+              ><i class="fab fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-codepen" target="blank"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        Designed By
+        <a href="https://github.com/ahmed7sead">Ahmed Seaad</a> &copy; 2023
+      </p>
+      <a href="#header" title="Go To Up">
+        <lord-icon
+          src="https://cdn.lordicon.com/ternnbni.json"
+          trigger="loop-on-hover"
+          delay="83"
+          colors="primary:#10e9c5"
+          style="width: 35px; height: 35px"
+          class="go-up"
+        >
+        </lord-icon>
+      </a>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
